@@ -4,7 +4,7 @@ from distutils.core import setup
 
 setup(
     name='tp_to_statsd',
-    version='0.1.1',
+    version='0.1.2',
     description='Record TP figures using statsd.',
     author='James Aylett',
     author_email='james@tartarus.org',

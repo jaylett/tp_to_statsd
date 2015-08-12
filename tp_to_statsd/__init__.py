@@ -75,7 +75,7 @@ class TP(object):
     ):
         count = 0
         for entity in self.act_on_collection(
-            self.api_base + "%(type)s/?include=EntityState&where=EntityState.Id eq '%(state_id)s'&take=250" % {
+            self.api_base + "%(type)s/?include=[EntityState]&where=EntityState.Id eq '%(state_id)s'&take=250" % {
                 'state_id': state_id,
                 'type': TP.plural_for_type(tp_type),
             }
